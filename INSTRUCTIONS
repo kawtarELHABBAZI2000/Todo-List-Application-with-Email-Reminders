@@ -1,0 +1,69 @@
+Assignment: Todo List Application with Email Reminders
+
+Objective
+Develop a full-stack application with the following components:
+
+Django Backend: A RESTful API for a todo list.
+FastAPI Microservice: An email reminder service using Postmark SMTP.
+Vue.js Frontend: A user interface for the todo list.
+Docker and Docker Compose: Containerization of all components and orchestration.
+
+Requirements:
+
+Django REST Backend:
+- Create a Django project with REST framework.
+- Implement a Todo model with fields like title, description, due_date, and status.
+- Develop CRUD API endpoints for the Todo model.
+
+FastAPI Email Reminder Service:
+- Set up a FastAPI project.
+- Implement an email sending feature using Postmark SMTP with the provided credentials.
+- Trigger emails for due tasks (you can simulate this based on a manual trigger for simplicity).
+
+Vue.js Frontend:
+- Develop a basic Vue.js app to display and manage the todo list.
+- Include functionalities to add, view, edit, and delete tasks, interfacing with the Django backend.
+
+Docker and Docker Compose:
+- Containerize each component (Django, FastAPI, Vue.js)
+- Create a Docker Compose file to run these services together.
+- Set up Nginx as a reverse proxy to route requests to the appropriate services.
+
+Documentation:
+- Provide a README file with setup and run instructions.
+
+Deliverables
+- Source code for Django, FastAPI, and Vue.js.
+- Dockerfiles and a Docker Compose file.
+- README with instructions.
+
+How to deliver:
+- Clone the following project: https://github.com/tasbiqmorocco/assignment
+- Each one of you should decide on what they want to work on, and create a branch for it.
+- When your work is done on the branch, create a PR to merge it with the main branch.
+
+Timeframe
+- The assignment should be completed in 3 days.
+
+Sending emails with SMTP
+- Server: smtp.postmarkapp.com
+- Ports: 25, 2525, or 587
+- Authentication: Plain text, CRAM-MD5, or TLS
+
+Authenticate with a Server Token and specify Stream with a Header:
+- Username: 3ca9152a-303d-47b4-96dd-4e20acc2e973
+- Password: 3ca9152a-303d-47b4-96dd-4e20acc2e973
+- Header: X-PM-Message-Stream: outbound
+
+Additional Notes
+- Keep the scope of each component basic and focused on core functionalities.
+- Prioritize functionality and integration over advanced features.
+- Ensure clear and concise documentation for setup and operation.
+- Even if each one of you will be working on a part of the project, each one of you will be asked about the whole project, and you should be able to reproduce everything by yourself.
+- You can always ask questions about your assignment during the daily meetings.
+- Make sure your code is well commented so that anyone can understand what you're doing.
+- Feel free to organize online meetings with each other to work on the project.
+
+This assignment is structured to provide a comprehensive learning experience in full-stack development, microservices, and containerization, within a manageable scope for a 3-day period.
+
+Good luck!
